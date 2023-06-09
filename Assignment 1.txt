@@ -1,0 +1,15 @@
+What is called website?
+- collection of webpages.
+
+What is called web pages?
+- web page contains information on a specific topic.
+- Different web pages of a website can be about us, contact us, products, services, address etc.
+
+What is web Browser?
+- To access the information on the www that includes webpage, video, images. Eg. chrome, opera, safari, microsoft edge, brave, UC Browser etc.
+
+What is Search Engine?
+- To find/search the information. Eg. Microsoft Bing, Yahoo, Google Search, DuckDuckGo etc.
+
+What is web server?
+- Collection of the data. WWW is the widely used.
