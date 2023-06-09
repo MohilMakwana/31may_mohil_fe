@@ -1,0 +1,18 @@
+What is SEO?
+- SEO stands for search engine optimization. 
+- SEO is used to rank the website on top among the searches. 
+  SEO depends upon different factors to rank the website like keywords research, by advertising, content etc.
+
+What is Domain?
+- Domain name refers to your website address.
+  eg. www.google.com , www.facebook.com
+  The .com is called the top level domain.
+  The google is called the second level domain.
+
+What is Javascript?
+- Javascript is a scripting language.
+- there are two types of scripting languages. server side and client side 
+- server side scripting languages are python,PHP,Perl and client side Scripting language are javascript
+
+What is protocol?
+- System of rules for communicating data means how data is exchanged within system. 
