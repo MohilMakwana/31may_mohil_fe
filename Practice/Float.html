@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: auto;
+            width: auto;
+            border: 1px solid red;
+        }
+        .container .item{
+            height: 150px;
+            width: 50%;
+            /* float: left; */
+        }
+        .container .item:nth-child(even){
+            background: lightblue;
+        }
+        .container .item:nth-child(odd){
+            background: lightcoral;
+        }
+        .container .i-2{
+            /* float: right; */
+            clear: left;
+        }
+        .container .i-3{
+            /* float: left; */
+            clear: right;
+        }
+        .container .i-4{
+            /* float: right; */
+            clear: left;
+        }
+        .container .i-5{
+            /* float: left; */
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i-1">Item 1</div>
+        <div class="item i-2">Item 2</div>
+        <div class="item i-3">Item 3</div>
+        <div class="item i-4">Item 4</div>
+        <div class="item i-5">Item 5</div>
+        <div class="i-6"></div>
+    </div>
+</body>
+</html>

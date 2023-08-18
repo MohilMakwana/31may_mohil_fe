@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xyz</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        background-color: black;
+        height: 70px;
+        width: auto;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    ul li {
+        list-style: none;
+        display: inline;
+        color: white;
+        font-size: 20px;
+        padding: 50px;
+    }
+
+    .men {
+        position: relative;
+        transition: 1s;
+    }
+
+    .men .menu {
+        margin-left: 100px;
+        display: none;
+        position: absolute;
+    }
+
+    .men:hover .menu {
+        display: flex;
+    }
+
+    .men .menu .men-menu {
+        border: none;
+        color: black;
+        background-color: grey;
+        width: 500px;
+        line-height: 40px;
+        font-size: 15px;
+        text-align: left;
+    }
+    th{
+        /* font-weight: 900px; */
+        color: red;
+    }
+    .women {
+        position: relative;
+    
+    }
+
+    .women .menu2 {
+        margin-left: 150px;
+        display: none;
+        position: absolute;
+    }
+
+    .women:hover .menu2 {
+        display: flex;
+    }
+
+    .women .menu2 .women-menu2 {
+        border: none;
+        color: black;
+        background-color: grey;
+        width: 500px;
+        line-height: 40px;
+        font-size: 15px;
+        /* border-radius: 20px; */
+        text-align: left;
+    }
+</style>
+
+<body>
+    <ul>
+        <li class="men">Men
+            <div class="menu">
+                <table class="men-menu">
+                    <tr>
+                        <th>TopWear</th>
+                        <th>Bottomwear</th>
+                        <th>Footwear</th>
+                    </tr>
+                    <tr>
+                        <td>T-Shirts</td>
+                        <td>Jeans</td>
+                        <td>Causual Shoes</td>
+                    </tr>
+                    <tr>
+                        <td>Casual Shirts</td>
+                        <td>Causual Trousers</td>
+                        <td>Sports Shoes</td>
+                    </tr>
+                    <tr>
+                        <td>Formal Shirts</td>
+                        <td>Formal Trousers</td>
+                        <td>Formal Shoes</td>
+                    </tr>
+                    <tr>
+                        <td>SweatShirts</td>
+                        <td></td>
+                        <td>Sneakers</td>
+                    </tr>
+                    <tr>
+                        <td>Sweaters</td>
+                        <td></td>
+                        <td>Flip Flops</td>
+                    </tr>
+                    <tr>
+                        <td>Jackets</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+        </li>
+        <li class="women">Women
+            <div class="menu2">
+                <table class="women-menu2">
+                    <tr>
+                        <th>Jewellers</th>
+                        <th>Footwear</th>
+                        <th>Western Wear</th>
+                    </tr>
+                    <tr>
+                        <td>Fashion Jewellers</td>
+                        <td>Heels</td>
+                        <td>Dresses</td>
+                    </tr>
+                    <tr>
+                        <td>Fine Jewellers</td>
+                        <td>Boots</td>
+                        <td>Tops</td>
+                    </tr>
+                    <tr>
+                        <td>Earings</td>
+                        <td>Flats</td>
+                        <td>Tshirts</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Jeans</td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+        <li>Kids</li>
+        <li>Home & Living</li>
+        <li>Beauty</li>
+    </ul>
+</body>
+
+</html>
