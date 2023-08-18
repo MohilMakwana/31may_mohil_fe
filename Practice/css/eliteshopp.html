@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elite header</title>
+    <link rel="stylesheet" href="elite.css">
+    <style>
+        * {
+            margin-top: 10px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            ;
+        }
+
+        ul {
+            height: 70px;
+            width: auto;
+            background: black;
+            text-align: center;
+            line-height: 70px;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            color: white;
+            font-size: 20px;
+            margin: 5px;
+            padding: 50px;
+            font-size: medium;
+        }
+
+        .parent {
+            position: relatives;
+            transition: 1s;
+        }
+
+        .parent .main {
+            height: auto;
+            width: 50%;
+            position: absolute;
+            /* top: 70px; */
+            margin-left: 490px;
+            /* border: 1px solid red; */
+            display: none;
+        }
+
+        .parent:hover .main {
+            display: flex;
+        }
+
+        .parent .main .list .menu {
+            background: white;
+        }
+
+        .parent .main .list .menu .item {
+            display: block;
+            line-height: 0;
+            color: black;
+            font-size: 20px;
+            margin: 1;
+            padding: 18px;
+
+        }
+
+        .parent .main .list .menu2 {
+            background: white;
+        }
+
+        .parent .main .list .menu2 .item1 {
+            display: block;
+            line-height: 0;
+            color: black;
+            font-size: 20px;
+            margin-left: 60px;
+            margin: 1;
+            padding: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li class="parent">Men's wear
+            <div class="main">
+                <div class="img">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/top2.jpg"
+                        alt="">
+
+                </div>
+                <div class="list">
+                    <ul class="menu">
+                        <li class="item item-1">clothing</li>
+                        <li class="item item-2">walltes</li>
+                        <li class="item item-3">footwear</li>
+                        <li class="item item-4">watches</li>
+                        <li class="item item-5">accessories</li>
+                        <li class="item item-6">bags</li>
+                        <li class="item item-7">caps & hats</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul class="menu2">
+                        <li class="item1 item-1">jewellry</li>
+                        <li class="item1 item-3">sunglasses</li>
+                        <li class="item1 item-2">perfumes</li>
+                        <li class="item1 item-4">beauty</li>
+                        <li class="item1 item-5">shirts</li>
+                        <li class="item1 item-6">sunglasses</li>
+                        <li class="item1 item-7">swimwear</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>women's wear</li>
+        <li>Short Codes</li>
+        <li>Contact</li>
+    </ul>
+</body>
+
+</html>

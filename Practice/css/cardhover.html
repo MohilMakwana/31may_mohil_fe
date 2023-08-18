@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ffaf00, #bb02ff);
+        }
+
+        .container{
+            /* position: relative; */
+            width: 1150px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .container .card{
+            /* position: relative; */
+            width: 300px;
+            height: 420px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 20px;
+            transition: 0.7s;
+        }
+
+        .container:hover .card{
+            filter: blur(20px);
+            opacity: 0.5;
+        }
+
+        .container .card:hover{
+            filter: blur(0);
+            opacity: 1;
+        }
+
+        .container .card .circle{
+            width: 100%;
+            height: 100%;
+            background: #000;
+            text-align: center;
+            position: relative;
+        }
+
+        .container .card h2{
+            color: #fff;
+            font-size: 70px;
+            padding: 30px ;
+        }
+
+        .container .card .content{
+
+            bottom: 10px;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            display: none;
+        }
+
+        .container .card .content:hover p{
+            color: #666;
+            transition: 0.5s;
+            display: flex;
+        }
+
+        .container.card .content a{
+            /* position: relative; */
+            padding: 10px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.8s;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="circle">
+                <h2>01</h2>
+                <div class="content">
+                    <p>Lorem, ipsum dolor.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="circle">
+                <h2>02</h2>
+                <div class="content">
+                    <p>Lorem, ipsum dolor.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="circle">
+                <h2>03</h2>
+                <div class="content">
+                    <p>Lorem, ipsum dolor.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .container{
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 1150px;
+            /* border: 1px solid black; */
+            position: relative;
+        }
+
+        .container .card{
+            width: 300px;
+            height: 420px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 20px;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .container .card .content{
+            display: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="num">
+                <h2>01</h2>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor.</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto?</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="num">
+                <h2>02</h2>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor.</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto?</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="num">
+                <h2>03</h2>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor.</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto?</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
