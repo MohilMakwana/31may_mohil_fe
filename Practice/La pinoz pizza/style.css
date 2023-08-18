@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Start */
+.header {
+    height: 70px;
+    /* border: 1px solid black; */
+    background: #fff;
+}
+
+.header .logo {
+    width: 20%;
+    height: 70px;
+    float: left;
+}
+
+.header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .menu {
+    width: 80%;
+    height: 70px;
+    float: left;
+}
+
+/* .header .menu{
+border: 1px solid black;
+} */
+.header .menu ul {
+    width: 80%;
+    height: inherit;
+    /* border: 1px solid black; */
+    float: right;
+    margin: 0;
+}
+
+.header .menu ul li {
+    width: 14%;
+    height: inherit;
+    list-style: none;
+    float: left;
+    /* text-align: right; */
+    /* border: 1px solid black; */
+}
+
+.header .menu ul li a {
+    line-height: 70px;
+    text-decoration: none;
+    color: darkgreen;
+    padding: 0.2px;
+}
+
+.header .menu ul li span {
+    background: darkgreen;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.header ul li:focus {
+    background: darkgreen;
+}
+
+/* Header End */
+
+.banner{
+    height: 500px;
+    width: auto;
+    background: url('https://lapinozpizza.in/assets/wla_new/lapinoz/img/banner3.jpg');
+    background-size: 100% 100%;
+    filter: brightness(50%);
+    text-align: center;
+    line-height: 200px;
+}
+.banner h1{
+    margin: 0;
+    font-size: 72px;
+    color: #fff;
+}
+.banner h1 span{
+    color: yellow;
+}
+.Deals{
+    height: 350px;
+    width: 100%;
+}
+.Deals h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.Deals .offers{
+    height: 300px;
+    /* width: 80%; */
+    margin: auto;    
+    display: flex;
+    /* border: 1px solid black; */
+}
+.Deals .cupans{
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    margin-left: 80px;
+    padding: 80px;
+    /* float: left; */
+}
+.Deals .c-1{
+    background: url('https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-four.jpg');
+    background-size: 100% 100%;
+}
+.Deals .c-2{
+    background: url('https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-five.jpg');
+    background-size: 100% 100%;
+}
+.Deals .c-3{
+    background: url('https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg');
+    background-size: 100% 100%;
+}
+.about{
+    height: 500px;
+    width: 100%;
+}
+.about .aboutus{
+    color: Green;
+    font-size: 35px;
+    text-decoration: dotted;
+}
+.about .chef{
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.about .chef-img img{
+    border-radius: 50%;
+    margin-left: 120px;
+}

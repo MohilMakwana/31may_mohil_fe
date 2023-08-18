@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-login{
+    height: 32px;
+    width: auto;
+    background-color: #000000;
+    color: white;
+}
+.header-login ul{
+    display: flex;
+    line-height: 32px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 140px;
+}
+
+.header-search{
+    height: 50px;
+    width: auto;
+    background-color: white;
+    font-size: 50px;
+    display: flex;
+    /* padding: 80px; */
+    text-align: center;
+}
+span input{
+    margin: 20px;
+    font-size: large;
+}
+span button{
+    font-size: large;
+}
+
+.symbol{
+    margin: 20px;
+}
+.social-media{
+    margin: 50px;
+}
