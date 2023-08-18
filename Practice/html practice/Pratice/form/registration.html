@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Registration</legend>
+        <form action="" method="post">
+            <label for="fnm">First Name:</label>
+            <input type="text" name="fnm" placeholder="Enter your name..." required>
+            <br><br>
+            <label for="lnm">Last Name:</label>
+            <input type="text" name="lnm" id="">
+            <br><br>
+            <label for="mail">E-Mail</label>
+            <input type="email" name="mail" id="">
+            <br><br>
+            <label for="phno">Phone No:</label>
+            <select name="" id="">
+                <option value="91">+91</option>
+                <option value="1">+1</option>
+            </select>
+            <input type="tel" name="phno" id="" required minlength="10" maxlength="10" pattern="[0-9]{10}">
+            <br><br>
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" id="">
+            <br><br>
+            <label for="add">Address:</label>
+            <textarea name="add" id="" cols="20" rows="5"></textarea>
+            <br><br>
+            <label for="pass">Password:</label>
+            <input type="password" name="" id="" required pattern="[0-9, A-Z, a-z, @]{6,8}">
+            <br><br>
+            <input type="submit" name="" id="" value="Sign-Up">
+            <input type="reset" name="" id="">
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
