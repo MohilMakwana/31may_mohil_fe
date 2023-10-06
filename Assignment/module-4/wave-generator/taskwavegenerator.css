@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wave-generator {
+    background-image: url(../photos/taskwave.jpeg);
+    background-size: 100% 100%;
+    height: 600px;
+    position: relative;
+}
+
+.wave-generator-head {
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+.wave-generator .wave-generator-head h1 {
+    padding-bottom: 10px;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid red;
+    height: 8px;
+    width: 8px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.circle::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    margin-left: 20px;
+    height: 2px;
+    width: 100px;
+    background-color: gray;
+}
+
+.circle::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    margin-right: 20px;
+    height: 2px;
+    width: 100px;
+    background-color: grey;
+}
+
+svg {
+    top: 280px;
+    position: absolute;
+}
+
+.person {
+    height: auto;
+    width: auto;
+    position: absolute;
+    /* padding-top: 50px; */
+    /* border: 1px solid red; */
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.founder,
+.Engineering,
+.Designer,
+.Marketing,
+.Web-developer {
+    padding-right: 160px;
+    position: relative;
+}
+
+.person .details {
+    position: absolute;
+    padding-top: 20px;
+    display: none;
+}
+
+.person img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+h4 {
+    color: red;
+}
+
+.founder {
+    padding-top: 0px;
+}
+
+.Engineering {
+    padding-top: 0px;
+}
+
+.Designer {
+    padding-top: 110px;
+}
+
+.Marketing {
+    padding-top: 210px;
+}
+
+.Web-developer {
+    padding-top: 190px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.founder:hover .details {
+    display: block;
+}
+
+.Engineering:hover .details {
+    display: block;
+}
+
+.Designer:hover .details {
+    display: block;
+}
+
+.Marketing:hover .details {
+    display: block;
+}
+
+.Web-developer:hover .details {
+    display: block;
+}
