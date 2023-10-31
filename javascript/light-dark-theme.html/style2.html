@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light-dark Theme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            color: black;
+            background-color: white;
+        }
+
+        button {
+            margin-top: 3px;
+            padding: 3px 22px;
+            border-radius: 20px;
+        }
+
+        #hello {
+            transform: translate(-19px, 0px);
+        }
+
+        #moon {
+            transform: translate(5px, 0px);
+            display: block;
+        }
+        
+        #sun {
+            transform: translate(36px, 0px);
+            display: none;
+        }
+        .fa-moon{
+            display: block;
+        }
+        .fa-sun{
+            display: none;
+        }
+        span{
+            margin-left: -12px;
+        }
+        .dark-theme {
+            color: white;
+            background-color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <i class="fa-solid fa-moon" id="moon" ></i> <i class="fa-solid fa-sun" id="sun"></i>
+        <button onclick="swap()" id="button"><i id="hello" class="fa-solid fa-circle"></i><span id="buttons">Dark</span></button>
+
+    </div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusantium, similique incidunt unde illo,
+        ratione cupiditate in ut odio est saepe officiis itaque? Debitis sed aperiam illum aut sapiente odit?</div>
+
+    <br>
+
+    <script>
+        function swap() {
+            let theme = document.getElementById('hello');
+            if (theme.style.transform == "translate(35px, 0px)") {
+                theme.style.transform = "translate(-19px, 0px)";
+            }
+            else {
+                theme.style.transform = "translate(35px, 0px)";
+            }
+
+            let darkmoon = document.getElementById("moon");
+            darkmoon.classList.toggle("fa-moon");
+
+            let lightsun = document.getElementById('sun');
+            darkmoon.classList.toggle("fa-sun");
+            
+            let body = document.body;
+            body.classList.toggle("dark-theme");
+
+            let button = document.getElementById('buttons');
+            if (button.innerHTML == "Dark") {
+                button.innerHTML = "Light";
+            } 
+            else {
+                button.innerHTML = "Dark"
+            }
+
+        }
+    </script>
+</body>
+
+</html>

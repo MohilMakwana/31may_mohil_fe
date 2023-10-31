@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light-dark Theme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            color: black;
+            background-color: white;
+            /* text-align: center; */
+            /* justify-content: center; */
+        }
+
+        button {
+            margin-top: 3px;
+            padding: 3px 18px;
+            border-radius: 20px;
+        }
+
+        #hello {
+            transform: translate(-16px, 0px);
+        }
+
+        #moon {
+            transform: translate(5px, 0px);
+            display: block;
+        }
+        
+        #sun {
+            transform: translate(36px, 0px);
+            display: none;
+        }
+
+        .dark-theme {
+            color: white;
+            background-color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <i class="fa-solid fa-moon" id="moon"></i> <i class="fa-solid fa-sun" id="sun"></i>
+        <button onclick="swap()" id="button"><i id="hello" class="fa-solid fa-circle"></i></button>
+
+    </div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusantium, similique incidunt unde illo,
+        ratione cupiditate in ut odio est saepe officiis itaque? Debitis sed aperiam illum aut sapiente odit?</div>
+
+    <br>
+
+    <script>
+        function swap() {
+            let theme = document.getElementById('hello');
+            if (theme.style.transform == "translate(16px, 0px)") {
+                theme.style.transform = "translate(-16px, 0px)";
+            }
+            else {
+                theme.style.transform = "translate(16px, 0px)";
+            }
+
+
+
+            let darkmoon = document.getElementById("moon");
+            if (darkmoon.style.display == 'none') {
+                darkmoon.style.display = 'block';
+            }
+            else {
+                darkmoon.style.display = "none";
+            }
+
+
+
+            let lightsun = document.getElementById('sun');
+            if (lightsun.style.display == 'block') {
+                lightsun.style.display = 'none';
+            }
+            else {
+                lightsun.style.display = "block";
+            }
+
+
+            let body = document.body;
+            body.classList.toggle("dark-theme");
+
+        }
+    </script>
+</body>
+
+</html>

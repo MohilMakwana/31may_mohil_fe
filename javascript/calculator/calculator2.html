@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="text">
+    <button type="button">1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+    <button type="button">4</button>
+    <button type="button">5</button>
+    <button type="button">+</button>
+    <button type="button">-</button>
+    <button type="button">X</button>
+    <button type="button">%</button>
+    <button type="button">C</button>
+    <button type="button">del</button>
+    <button type="button">=</button>
+
+    <script>
+        let buttons = document.querySelectorAll('button');
+        let result='';
+        for(i of buttons)
+        {
+            i.addEventListener('click', function(e){
+                buttonText = e.target.innerText;
+                // console.log(buttonText);
+                if(buttonText == '=')
+                {
+                    result = eval(result);
+                    console.log(result);
+                    result = '';
+                }
+                else if(buttonText == 'X'){
+                    buttonText = '*';
+                    result+=buttonText;
+                    console.log(result);
+                }
+                else if(buttonText=='C'){
+                    result = '';
+                    console.log(result);
+                }
+                else if(buttonText=='del'){
+                    del = result.length-1;
+                    i.removeEventListener('click', del);
+                    console.log(result);
+                }
+                else{
+                    result += buttonText;
+                    console.log(result);
+                }
+            })
+        }
+    </script>
+</body>
+</html>

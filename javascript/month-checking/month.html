@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Date1 : <input type="date" id="date1"> 
+    Date2 : <input type="date" id="date2"> 
+    <button  onclick="display()">Add Info</button>
+    <p id="printhere"></p>
+   <script>
+    function display(){
+        var Date1 = document.getElementById("date1").value;
+        var Date2 = document.getElementById("date2").value;
+        // let result = date / 7 + 'weeks';
+        document.getElementById("printhere").innerHTML = ' Difference between ' + Date1 + ' and ' + Date2;
+    }
+    </script>
+    
+</body>
+
+</html>
