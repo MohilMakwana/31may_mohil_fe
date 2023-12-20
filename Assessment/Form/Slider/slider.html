@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        #slider img{
+            height: 500px;
+            width: 100%;
+        }
+
+        #thumbnails img{
+            height: 100px;
+            width: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slider">
+        <img id="main-image" src="https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY=" alt="">
+
+        <div id="thumbnails">
+            <button id="prev-button">Previous</button>
+            <img class="thumbnail"
+                src="https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY="
+                alt="">
+            <img class="thumbnail"
+                src="https://static.vecteezy.com/system/resources/previews/010/008/086/non_2x/background-dimension-3d-graphic-message-board-for-text-and-message-design-line-shadow-for-modern-web-design-free-vector.jpg"
+                alt="">
+            <img class="thumbnail"
+                src="https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg"
+                alt="">
+            <img class="thumbnail" src="https://th.bing.com/th/id/OIG.b7fbyFnoRp_h0eDim7rl" alt="">
+            <img class="thumbnail" src="https://www.shutterstock.com/image-illustration/pristine-reflective-lake-show-image-260nw-2305485315.jpg">
+            <img class="thumbnail" src="https://media.istockphoto.com/id/1644722689/photo/autumn-decoration-with-leafs-on-rustic-background.webp?b=1&s=170667a&w=0&k=20&c=aRdPqMJ6LUu_5l8yLzYEEh6dJqXsTBbNRUozBCwEKjs=" alt="">
+            <button id="next-button">Next</button>
+        </div>
+
+    </div>
+    <script src="slider.js"></script>
+    <!-- <script>
+        // DOM selectors
+        const slider = document.getElementById('slider');
+        const mainImage = document.getElementById('main-image');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
+
+        // Initial image index
+        let currentIndex = 0;
+
+        // Previous button functionality
+        prevButton.addEventListener('click', () => {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = thumbnails.length - 1;
+            }
+            updateImage();
+        });
+
+        // Next button functionality
+        nextButton.addEventListener('click', () => {
+            currentIndex++;
+            if (currentIndex >= thumbnails.length) {
+                currentIndex = 0;
+            }
+            updateImage();
+        });
+
+        // Image thumbnail functionality
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                currentIndex = index;
+                updateImage();
+            });
+        });
+
+        // Function to update the main image
+        function updateImage() {
+            mainImage.src = thumbnails[currentIndex].src;
+        }
+    </script> -->
+</body>
+
+</html>
