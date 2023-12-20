@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Registaration Form</title>
+    <link rel="shortcut icon" href="../Form/5EUsKLUE.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Student Registaration Form</h1>
+    <form action="#">
+        <div class="container">
+            <div class="row">
+                <div class="col-label">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name"
+                        pattern="[A-Z, a-z, @, #, $]{3,6}" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed" required
+                        minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="radio" id="male" name="gender" value="male" required>Male
+                    <input type="radio" id="female" name="gender" value="female" required>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="Date" id="dob" name="dob" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-inp">
+                    <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="text" id="city" name="city" maxlength="10" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="pincode">Area PIN:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="number" id="pin" name="pin" maxlength="6" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="state">State:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="text" id="state" name="state" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="qualification" required>Qualification:</label>
+                </div>
+                <div class="col-inp">
+                    <select name="qualification" id="qualification" required>
+                        <option value=" ">Select Qualification:</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="BTech.">BTech.</option>
+                        <option value="MTech.">MTech.</option>
+                        <option value="MCA">MCA</option>
+                        <option value="BCA">BCA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="specialization">Specialization:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="checkbox" class="specialization" id="cs" name="specialization[]"
+                        value="Computer Science" required>Computer Science<br />
+                    <input type="checkbox" class="specialization" id="it" name="specialization[]"
+                        value="Information Technology" required>Information Technology<br />
+                    <input type="checkbox" class="specialization" id="ca" name="specialization[]"
+                        value="Computer Architecture" required>Computer Architecture<br />
+                    <input type="checkbox" class="specialization" id="tc" name="specialization[]"
+                        value="Tele Communication" required>Tele Communication<br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="col-inp">
+                    <input type="password" id="password" name="password" required pattern="[0-9, A-Z, a-z, @]{6,8}"
+                        required>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Registered">
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <script src="script.js"></script>
+    </form>
+</body>
+
+</html>
